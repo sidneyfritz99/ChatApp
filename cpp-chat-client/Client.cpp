@@ -29,6 +29,8 @@ void Client::closeSocket(){
 
 }
 
+//TEST
+
 void Client::createSocketAndLogIn() {
     sock_init();
     struct addrinfo {

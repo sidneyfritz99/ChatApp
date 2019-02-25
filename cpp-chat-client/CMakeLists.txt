@@ -1,15 +1,17 @@
-cmake_minimum_required(VERSION 3.10.2)
-project(cpp-chat-client)
+cmake_minimum_required(VERSION 3.13)
+project(cpp_chat_client)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 14)
 
-set(TARGET_NAME cpp-chat-client)
-add_executable(${TARGET_NAME} main.cpp vusocket.h Client.cpp Client.h Application.cpp Application.h vusocket.cpp CircularLineBuffer.cpp CircularLineBuffer.h)
-if(WIN32)
-    target_link_libraries(${TARGET_NAME} Ws2_32)
-else()
-    set(THREADS_PREFER_PTHREAD_FLAG ON)
-    find_package(Threads REQUIRED)
-    target_link_libraries(${TARGET_NAME} Threads::Threads)
-endif()
+include_directories(.)
 
+add_executable(cpp_chat_client
+        Application.cpp
+        Application.h
+        CircularLineBuffer.cpp
+        CircularLineBuffer.h
+        Client.cpp
+        Client.h
+        main.cpp
+        vusocket.cpp
+        vusocket.h)

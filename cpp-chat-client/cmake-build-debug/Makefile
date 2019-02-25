@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Documents\HVA\Jaar 3\VU Computer Networks\cpp-chat-client"
+CMAKE_SOURCE_DIR = "D:\Documents\HVA\Jaar 3\VU Computer Networks\ChatApp\ChatApp\cpp-chat-client"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Documents\HVA\Jaar 3\VU Computer Networks\cpp-chat-client\cmake-build-debug"
+CMAKE_BINARY_DIR = "D:\Documents\HVA\Jaar 3\VU Computer Networks\ChatApp\ChatApp\cpp-chat-client\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Documents\HVA\Jaar 3\VU Computer Networks\cpp-chat-client\cmake-build-debug\CMakeFiles" "D:\Documents\HVA\Jaar 3\VU Computer Networks\cpp-chat-client\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Documents\HVA\Jaar 3\VU Computer Networks\ChatApp\ChatApp\cpp-chat-client\cmake-build-debug\CMakeFiles" "D:\Documents\HVA\Jaar 3\VU Computer Networks\ChatApp\ChatApp\cpp-chat-client\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Documents\HVA\Jaar 3\VU Computer Networks\cpp-chat-client\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Documents\HVA\Jaar 3\VU Computer Networks\ChatApp\ChatApp\cpp-chat-client\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cpp-chat-client
+# Target rules for targets named cpp_chat_client
 
 # Build rule for target.
-cpp-chat-client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 cpp-chat-client
-.PHONY : cpp-chat-client
+cpp_chat_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 cpp_chat_client
+.PHONY : cpp_chat_client
 
 # fast build rule for target.
-cpp-chat-client/fast:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/build
-.PHONY : cpp-chat-client/fast
+cpp_chat_client/fast:
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/build
+.PHONY : cpp_chat_client/fast
 
 Application.obj: Application.cpp.obj
 
@@ -128,7 +128,7 @@ Application.obj: Application.cpp.obj
 
 # target to build an object file
 Application.cpp.obj:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/Application.cpp.obj
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/Application.cpp.obj
 .PHONY : Application.cpp.obj
 
 Application.i: Application.cpp.i
@@ -137,7 +137,7 @@ Application.i: Application.cpp.i
 
 # target to preprocess a source file
 Application.cpp.i:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/Application.cpp.i
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/Application.cpp.i
 .PHONY : Application.cpp.i
 
 Application.s: Application.cpp.s
@@ -146,7 +146,7 @@ Application.s: Application.cpp.s
 
 # target to generate assembly for a file
 Application.cpp.s:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/Application.cpp.s
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/Application.cpp.s
 .PHONY : Application.cpp.s
 
 CircularLineBuffer.obj: CircularLineBuffer.cpp.obj
@@ -155,7 +155,7 @@ CircularLineBuffer.obj: CircularLineBuffer.cpp.obj
 
 # target to build an object file
 CircularLineBuffer.cpp.obj:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/CircularLineBuffer.cpp.obj
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/CircularLineBuffer.cpp.obj
 .PHONY : CircularLineBuffer.cpp.obj
 
 CircularLineBuffer.i: CircularLineBuffer.cpp.i
@@ -164,7 +164,7 @@ CircularLineBuffer.i: CircularLineBuffer.cpp.i
 
 # target to preprocess a source file
 CircularLineBuffer.cpp.i:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/CircularLineBuffer.cpp.i
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/CircularLineBuffer.cpp.i
 .PHONY : CircularLineBuffer.cpp.i
 
 CircularLineBuffer.s: CircularLineBuffer.cpp.s
@@ -173,7 +173,7 @@ CircularLineBuffer.s: CircularLineBuffer.cpp.s
 
 # target to generate assembly for a file
 CircularLineBuffer.cpp.s:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/CircularLineBuffer.cpp.s
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/CircularLineBuffer.cpp.s
 .PHONY : CircularLineBuffer.cpp.s
 
 Client.obj: Client.cpp.obj
@@ -182,7 +182,7 @@ Client.obj: Client.cpp.obj
 
 # target to build an object file
 Client.cpp.obj:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/Client.cpp.obj
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/Client.cpp.obj
 .PHONY : Client.cpp.obj
 
 Client.i: Client.cpp.i
@@ -191,7 +191,7 @@ Client.i: Client.cpp.i
 
 # target to preprocess a source file
 Client.cpp.i:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/Client.cpp.i
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/Client.cpp.i
 .PHONY : Client.cpp.i
 
 Client.s: Client.cpp.s
@@ -200,35 +200,8 @@ Client.s: Client.cpp.s
 
 # target to generate assembly for a file
 Client.cpp.s:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/Client.cpp.s
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/Client.cpp.s
 .PHONY : Client.cpp.s
-
-addrinfo.obj: addrinfo.cpp.obj
-
-.PHONY : addrinfo.obj
-
-# target to build an object file
-addrinfo.cpp.obj:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/addrinfo.cpp.obj
-.PHONY : addrinfo.cpp.obj
-
-addrinfo.i: addrinfo.cpp.i
-
-.PHONY : addrinfo.i
-
-# target to preprocess a source file
-addrinfo.cpp.i:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/addrinfo.cpp.i
-.PHONY : addrinfo.cpp.i
-
-addrinfo.s: addrinfo.cpp.s
-
-.PHONY : addrinfo.s
-
-# target to generate assembly for a file
-addrinfo.cpp.s:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/addrinfo.cpp.s
-.PHONY : addrinfo.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -236,7 +209,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -245,7 +218,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -254,7 +227,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 vusocket.obj: vusocket.cpp.obj
@@ -263,7 +236,7 @@ vusocket.obj: vusocket.cpp.obj
 
 # target to build an object file
 vusocket.cpp.obj:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/vusocket.cpp.obj
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/vusocket.cpp.obj
 .PHONY : vusocket.cpp.obj
 
 vusocket.i: vusocket.cpp.i
@@ -272,7 +245,7 @@ vusocket.i: vusocket.cpp.i
 
 # target to preprocess a source file
 vusocket.cpp.i:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/vusocket.cpp.i
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/vusocket.cpp.i
 .PHONY : vusocket.cpp.i
 
 vusocket.s: vusocket.cpp.s
@@ -281,7 +254,7 @@ vusocket.s: vusocket.cpp.s
 
 # target to generate assembly for a file
 vusocket.cpp.s:
-	$(MAKE) -f CMakeFiles\cpp-chat-client.dir\build.make CMakeFiles/cpp-chat-client.dir/vusocket.cpp.s
+	$(MAKE) -f CMakeFiles\cpp_chat_client.dir\build.make CMakeFiles/cpp_chat_client.dir/vusocket.cpp.s
 .PHONY : vusocket.cpp.s
 
 # Help Target
@@ -290,7 +263,7 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... cpp-chat-client
+	@echo ... cpp_chat_client
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Application.obj
@@ -302,9 +275,6 @@ help:
 	@echo ... Client.obj
 	@echo ... Client.i
 	@echo ... Client.s
-	@echo ... addrinfo.obj
-	@echo ... addrinfo.i
-	@echo ... addrinfo.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -1,8 +1,8 @@
-# Install script for directory: D:/Documents/HVA/Jaar 3/VU Computer Networks/cpp-chat-client
+# Install script for directory: D:/Documents/HVA/Jaar 3/VU Computer Networks/ChatApp/ChatApp/cpp-chat-client
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/cpp-chat-client")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/cpp_chat_client")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Documents/HVA/Jaar 3/VU Computer Networks/cpp-chat-client/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Documents/HVA/Jaar 3/VU Computer Networks/ChatApp/ChatApp/cpp-chat-client/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
